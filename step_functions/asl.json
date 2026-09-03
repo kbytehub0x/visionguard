@@ -1,0 +1,207 @@
+{
+  "Comment": "VisionGuard Agentic Loop: Coordinates OpenCV 5 + COOL tasks, Bedrock tool calls, and human-in-the-loop escalation.",
+  "StartAt": "InitializeIncident",
+  "TimeoutSeconds": 3600,
+  "States": {
+    "InitializeIncident": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "VisionGuard-InitIncident",
+        "Payload": {
+          "incident_id.$": "$.incident_id",
+          "video_s3_uri.$": "$.video_s3_uri",
+          "zone_id.$": "$.zone_id",
+          "status": "QUEUED",
+          "agent_loop_count": 0
+        }
+      },
+      "ResultPath": "$.init_result",
+      "Next": "RunZoneIntrusion"
+    },
+    "RunZoneIntrusion": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::ecs:runTask.sync",
+      "Parameters": {
+        "Cluster": "VisionGuard-Graviton-Cluster",
+        "TaskDefinition": "VisionGuard-COOL-Task",
+        "LaunchType": "FARGATE",
+        "Overrides": {
+          "ContainerOverrides": [
+            {
+              "Name": "opencv-cool-container",
+              "Command": ["--tool", "zone_intrusion", "--payload", "$.init_result.Payload"]
+            }
+          ]
+        }
+      },
+      "Retry": [
+        {
+          "ErrorEquals": ["States.TaskFailed", "States.Timeout"],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 3,
+          "BackoffRate": 2.0
+        }
+      ],
+      "HeartbeatSeconds": 30,
+      "TimeoutSeconds": 120,
+      "ResultPath": "$.cv_result",
+      "Next": "EvaluateConfidence"
+    },
+    "EvaluateConfidence": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.cv_result.overall_confidence",
+          "GreaterThanEquals": 0.75,
+          "Next": "ClassifySeverity"
+        }
+      ],
+      "Default": "MaxIterationsCheck"
+    },
+    "MaxIterationsCheck": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.agent_loop_count",
+          "GreaterThanEquals": 5,
+          "Next": "ClassifySeverity"
+        }
+      ],
+      "Default": "BedrockToolRouter"
+    },
+    "BedrockToolRouter": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "VisionGuard-BedrockRouter",
+        "Payload": {
+          "cv_result.$": "$.cv_result",
+          "incident_context.$": "$"
+        }
+      },
+      "ResultPath": "$.tool_decision",
+      "Next": "RunToolOnFargate"
+    },
+    "RunToolOnFargate": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::ecs:runTask.sync",
+      "Parameters": {
+        "Cluster": "VisionGuard-Graviton-Cluster",
+        "TaskDefinition": "VisionGuard-COOL-Task",
+        "LaunchType": "FARGATE",
+        "Overrides": {
+          "ContainerOverrides": [
+            {
+              "Name": "opencv-cool-container",
+              "Command.$": "States.Array('--tool', $.tool_decision.Payload.tool_name, '--payload', $.tool_decision.Payload.tool_args)"
+            }
+          ]
+        }
+      },
+      "ResultPath": "$.cv_result",
+      "Next": "IncrementLoopCount"
+    },
+    "IncrementLoopCount": {
+      "Type": "Pass",
+      "Parameters": {
+        "agent_loop_count.$": "States.MathAdd($.agent_loop_count, 1)",
+        "incident_id.$": "$.incident_id",
+        "video_s3_uri.$": "$.video_s3_uri",
+        "zone_id.$": "$.zone_id",
+        "status.$": "$.status",
+        "cv_result.$": "$.cv_result",
+        "tool_decision.$": "$.tool_decision"
+      },
+      "ResultPath": "$",
+      "Next": "EvaluateConfidence"
+    },
+    "ClassifySeverity": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.tool_decision.Payload.severity",
+          "StringEquals": "HIGH",
+          "Next": "AutomatedAlert"
+        },
+        {
+          "Variable": "$.tool_decision.Payload.severity",
+          "StringEquals": "CRITICAL",
+          "Next": "AutomatedAlert"
+        }
+      ],
+      "Default": "RequestHumanReview"
+    },
+    "RequestHumanReview": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sqs:sendMessage.waitForTaskToken",
+      "Parameters": {
+        "QueueUrl": "[https://sqs.REGION.amazonaws.com/ACCOUNT/VisionGuard-HumanReviewQueue](https://sqs.REGION.amazonaws.com/ACCOUNT/VisionGuard-HumanReviewQueue)",
+        "MessageBody": {
+          "TaskToken.$": "$$.Task.Token",
+          "IncidentData.$": "$.cv_result"
+        }
+      },
+      "TimeoutSeconds": 300,
+      "Catch": [
+        {
+          "ErrorEquals": ["States.Timeout"],
+          "Next": "EscalateUnreviewed"
+        }
+      ],
+      "ResultPath": "$.human_review_result",
+      "Next": "ProcessHumanDecision"
+    },
+    "ProcessHumanDecision": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.human_review_result.decision",
+          "StringEquals": "APPROVE",
+          "Next": "FinalizeResolved"
+        },
+        {
+          "Variable": "$.human_review_result.decision",
+          "StringEquals": "FALSE_POSITIVE",
+          "Next": "MarkFalsePositive"
+        }
+      ],
+      "Default": "FinalizeResolved"
+    },
+    "MarkFalsePositive": {
+      "Type": "Pass",
+      "Next": "FinalizeAuditLog"
+    },
+    "AutomatedAlert": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish",
+      "Parameters": {
+        "TopicArn": "arn:aws:sns:REGION:ACCOUNT:VisionGuard-Alerts",
+        "Message.$": "States.JsonToString($.cv_result)"
+      },
+      "Next": "FinalizeAuditLog"
+    },
+    "EscalateUnreviewed": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sns:publish",
+      "Parameters": {
+        "TopicArn": "arn:aws:sns:REGION:ACCOUNT:VisionGuard-Escalations",
+        "Message": "Human review timeout exceeded. Auto-escalating."
+      },
+      "Next": "FinalizeAuditLog"
+    },
+    "FinalizeResolved": {
+      "Type": "Pass",
+      "Next": "FinalizeAuditLog"
+    },
+    "FinalizeAuditLog": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "FunctionName": "VisionGuard-WriteAuditLog",
+        "Payload.$": "$"
+      },
+      "End": true
+    }
+  }
+}
