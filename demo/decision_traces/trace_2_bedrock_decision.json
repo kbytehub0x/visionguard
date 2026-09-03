@@ -1,0 +1,12 @@
+{
+  "tool_name": "inspect_more_frames",
+  "tool_args": {
+    "s3_video_uri": "s3://visionguard-raw-video/raw/cam_warehouse_02/2026-09-01/inc_8f3a9b.mp4",
+    "start_time_sec": 12.0,
+    "end_time_sec": 16.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "sampling_rate_fps": 5
+  },
+  "severity": "MEDIUM",
+  "reasoning": "Intrusion confidence 0.68 is below 0.75 threshold. Requesting temporal verification across a 4-second window to eliminate transient false triggers."
+}
