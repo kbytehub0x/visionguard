@@ -1,0 +1,8 @@
+{
+  "capability": "temporal_tracking",
+  "temporal_confirmation": {
+    "persistence_seconds": 3.8,
+    "stationary": true,
+    "frames_evaluated": 20
+  }
+}
