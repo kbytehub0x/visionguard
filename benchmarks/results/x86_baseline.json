@@ -1,0 +1,7 @@
+{
+  "architecture": "x86_64",
+  "p95_latency_ms": 42.15,
+  "fps": 23.4,
+  "memory_mb": 412.5,
+  "cost_per_1k": 0.002018
+}
