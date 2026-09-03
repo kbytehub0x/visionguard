@@ -1,0 +1,17 @@
+{
+  "capability": "ppe_detection",
+  "target_entity_id": "ent_360_0",
+  "attributes": {
+    "hard_hat": {
+      "present": false,
+      "confidence": 0.94
+    },
+    "high_vis_vest": {
+      "present": true,
+      "confidence": 0.96
+    }
+  },
+  "ppe_violation": true,
+  "overall_confidence": 0.94,
+  "severity": "HIGH"
+}
