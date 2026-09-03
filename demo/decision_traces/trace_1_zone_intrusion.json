@@ -1,0 +1,21 @@
+{
+  "capability": "zone_intrusion",
+  "execution_runtime": "COOL_GRAVITON_ARM64",
+  "frame_id": 360,
+  "timestamp_sec": 12.0,
+  "zone_id": "ZONE_CRANE_RESTRICTED",
+  "intrusion_detected": true,
+  "intruder_count": 1,
+  "entities": [
+    {
+      "entity_id": "ent_360_0",
+      "bbox": {"x_min": 512, "y_min": 210, "x_max": 620, "y_max": 510},
+      "centroid": {"x": 566, "y": 360},
+      "motion_area_px": 8420,
+      "zone_overlap_pct": 54.2,
+      "confidence": 0.68
+    }
+  ],
+  "overall_confidence": 0.68,
+  "metrics": {"opencv_latency_ms": 3.84}
+}
