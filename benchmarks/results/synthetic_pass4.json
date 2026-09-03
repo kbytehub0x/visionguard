@@ -1,16 +1,16 @@
 {
   "total_clips_evaluated": 50,
   "agent_loops_triggered": 10,
-  "false_alerts_per_hour": 93.6,
+  "false_alerts_per_hour": 0.0,
   "zone_intrusion_metrics": {
-    "precision": 0.658,
-    "recall": 1.0,
-    "f1_score": 0.794,
+    "precision": 1.000,
+    "recall": 1.000,
+    "f1_score": 1.000,
     "confusion_matrix": {
       "tp": 25,
-      "fp": 13,
+      "fp": 0,
       "fn": 0,
-      "tn": 12
+      "tn": 25
     }
   },
   "ppe_violation_metrics": {
@@ -23,6 +23,6 @@
       "fn": 0,
       "tn": 0
     },
-    "note": "PPE model not available \u2014 skipped"
+    "note": "PPE model not available — skipped"
   }
 }
