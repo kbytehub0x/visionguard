@@ -1,0 +1,7 @@
+{
+  "architecture": "aarch64",
+  "p95_latency_ms": 26.13,
+  "fps": 37.8,
+  "memory_mb": 285.4,
+  "cost_per_1k": 0.001065
+}
