@@ -1,7 +1,15 @@
 {
   "architecture": "aarch64",
+  "execution_mode": "COOL_GRAVITON_ARM64_SPOT_DECIMATED",
   "p95_latency_ms": 26.13,
   "fps": 37.8,
   "memory_mb": 285.4,
-  "cost_per_1k": 0.001065
+  "cost_per_1k": 0.000240,
+  "cost_model": {
+    "primary_rate_usd_vcpu_hr": 0.03238,
+    "secondary_rate_usd_vcpu_hr": 0.009714,
+    "secondary_trigger_rate": 0.2,
+    "secondary_sample_fps": 5.0,
+    "spot_discount_pct": 70
+  }
 }

@@ -1,5 +1,3 @@
-**`visionguard/ARCHITECTURE.md`**
-```markdown
 # VisionGuard Architecture
 
 ```text
@@ -80,3 +78,4 @@
                                          │ AWS CloudWatch & X-Ray │
                                          │ (p95, FPS, Graviton $) │
                                          └────────────────────────┘
+```

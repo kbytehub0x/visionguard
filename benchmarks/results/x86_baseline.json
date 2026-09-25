@@ -1,7 +1,15 @@
 {
   "architecture": "x86_64",
+  "execution_mode": "x86_ONDEMAND_FULL_PIPELINE",
   "p95_latency_ms": 42.15,
   "fps": 23.4,
   "memory_mb": 412.5,
-  "cost_per_1k": 0.002018
+  "cost_per_1k": 0.000577,
+  "cost_model": {
+    "primary_rate_usd_vcpu_hr": 0.04048,
+    "secondary_rate_usd_vcpu_hr": 0.04048,
+    "secondary_trigger_rate": 0.2,
+    "secondary_sample_fps": 30.0,
+    "spot_discount_pct": 0
+  }
 }

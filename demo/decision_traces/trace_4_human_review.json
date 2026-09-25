@@ -2,7 +2,7 @@
   "TaskToken": "AAAAKgAAAAIAAAAAAAAAA...",
   "incident_id": "inc_8f3a9b",
   "severity": "HIGH",
-  "evidence_frame_url": "[https://visionguard-evidence.s3.amazonaws.com/annotated/inc_8f3a9b_final.jpg?X-Amz-Expires=3600](https://visionguard-evidence.s3.amazonaws.com/annotated/inc_8f3a9b_final.jpg?X-Amz-Expires=3600)",
+  "evidence_frame_url": "https://visionguard-evidence.s3.amazonaws.com/annotated/inc_8f3a9b_final.jpg?X-Amz-Expires=3600",
   "audit_trail": [
     "00:12.0 - Zone intrusion detected (conf: 0.68, unverified)",
     "00:13.1 - Bedrock tool call: inspect_more_frames",
