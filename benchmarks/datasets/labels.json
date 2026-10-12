@@ -1,0 +1,1402 @@
+[
+  {
+    "clip_id": "clip_000",
+    "frame_path": "benchmarks/datasets/frames/clip_000.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_001",
+    "frame_path": "benchmarks/datasets/frames/clip_001.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_002",
+    "frame_path": "benchmarks/datasets/frames/clip_002.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_003",
+    "frame_path": "benchmarks/datasets/frames/clip_003.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_004",
+    "frame_path": "benchmarks/datasets/frames/clip_004.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_005",
+    "frame_path": "benchmarks/datasets/frames/clip_005.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_006",
+    "frame_path": "benchmarks/datasets/frames/clip_006.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_007",
+    "frame_path": "benchmarks/datasets/frames/clip_007.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_008",
+    "frame_path": "benchmarks/datasets/frames/clip_008.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_009",
+    "frame_path": "benchmarks/datasets/frames/clip_009.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_010",
+    "frame_path": "benchmarks/datasets/frames/clip_010.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_011",
+    "frame_path": "benchmarks/datasets/frames/clip_011.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_012",
+    "frame_path": "benchmarks/datasets/frames/clip_012.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_013",
+    "frame_path": "benchmarks/datasets/frames/clip_013.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_014",
+    "frame_path": "benchmarks/datasets/frames/clip_014.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_015",
+    "frame_path": "benchmarks/datasets/frames/clip_015.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_016",
+    "frame_path": "benchmarks/datasets/frames/clip_016.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_017",
+    "frame_path": "benchmarks/datasets/frames/clip_017.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_018",
+    "frame_path": "benchmarks/datasets/frames/clip_018.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_019",
+    "frame_path": "benchmarks/datasets/frames/clip_019.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_020",
+    "frame_path": "benchmarks/datasets/frames/clip_020.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_021",
+    "frame_path": "benchmarks/datasets/frames/clip_021.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_022",
+    "frame_path": "benchmarks/datasets/frames/clip_022.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_023",
+    "frame_path": "benchmarks/datasets/frames/clip_023.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_024",
+    "frame_path": "benchmarks/datasets/frames/clip_024.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_025",
+    "frame_path": "benchmarks/datasets/frames/clip_025.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_026",
+    "frame_path": "benchmarks/datasets/frames/clip_026.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_027",
+    "frame_path": "benchmarks/datasets/frames/clip_027.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_028",
+    "frame_path": "benchmarks/datasets/frames/clip_028.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_029",
+    "frame_path": "benchmarks/datasets/frames/clip_029.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_030",
+    "frame_path": "benchmarks/datasets/frames/clip_030.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_031",
+    "frame_path": "benchmarks/datasets/frames/clip_031.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_032",
+    "frame_path": "benchmarks/datasets/frames/clip_032.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_033",
+    "frame_path": "benchmarks/datasets/frames/clip_033.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_034",
+    "frame_path": "benchmarks/datasets/frames/clip_034.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_035",
+    "frame_path": "benchmarks/datasets/frames/clip_035.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_036",
+    "frame_path": "benchmarks/datasets/frames/clip_036.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_037",
+    "frame_path": "benchmarks/datasets/frames/clip_037.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_038",
+    "frame_path": "benchmarks/datasets/frames/clip_038.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_039",
+    "frame_path": "benchmarks/datasets/frames/clip_039.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_040",
+    "frame_path": "benchmarks/datasets/frames/clip_040.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_041",
+    "frame_path": "benchmarks/datasets/frames/clip_041.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_042",
+    "frame_path": "benchmarks/datasets/frames/clip_042.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_043",
+    "frame_path": "benchmarks/datasets/frames/clip_043.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_044",
+    "frame_path": "benchmarks/datasets/frames/clip_044.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "safe_zone",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_045",
+    "frame_path": "benchmarks/datasets/frames/clip_045.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_046",
+    "frame_path": "benchmarks/datasets/frames/clip_046.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_047",
+    "frame_path": "benchmarks/datasets/frames/clip_047.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "occluded_person",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_048",
+    "frame_path": "benchmarks/datasets/frames/clip_048.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "shadow_noise",
+    "expected_intrusion": false,
+    "expected_ppe_violation": false,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  },
+  {
+    "clip_id": "clip_049",
+    "frame_path": "benchmarks/datasets/frames/clip_049.png",
+    "background_frame_path": "benchmarks/datasets/frames/background_base.png",
+    "category": "clear_intrusion",
+    "expected_intrusion": true,
+    "expected_ppe_violation": true,
+    "clip_duration_seconds": 10.0,
+    "zone_id": "ZONE_CRANE_RESTRICTED",
+    "zone_polygon_pts": [
+      [
+        400,
+        200
+      ],
+      [
+        800,
+        200
+      ],
+      [
+        800,
+        600
+      ],
+      [
+        400,
+        600
+      ]
+    ]
+  }
+]
