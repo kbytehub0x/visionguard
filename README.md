@@ -5,7 +5,6 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kbytehub0x/visionguard/blob/main/visionguard_demo.ipynb)
 [![Live Web Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-00FF88?style=flat&logo=github)](https://kbytehub0x.github.io/visionguard/)
-[![YouTube Demo](https://img.shields.io/badge/YouTube-1440p%20Master%20Video-FF0000?style=flat&logo=youtube)](https://youtu.be/M2dl8tMNx7A)
 
 VisionGuard transforms passive CCTV feeds into verified safety actions. By coupling **OpenCV 5 accelerated via COOL (Cloud-Optimized OpenCV Library)** on **AWS Graviton3** with an **Amazon Bedrock (Claude 3.5 Sonnet)** agentic reasoning loop, VisionGuard eliminates false alarms and ensures auditable human-in-the-loop escalation for workplace hazard zones.
 
